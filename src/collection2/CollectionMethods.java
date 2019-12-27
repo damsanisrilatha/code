@@ -1,6 +1,8 @@
 package collection2;
+
 import java.util.Collection;
 import java.util.ArrayList;
+
 public class CollectionMethods {
 
 	public static void main(String[] args) {
@@ -35,6 +37,8 @@ public class CollectionMethods {
 		a.indexOf(30);
 		System.out.println(a);
 		//----------------------------	
+		
+		System.out.println("final arraylist is="+a);
 	}
 
 }

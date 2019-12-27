@@ -1,5 +1,7 @@
 package collection2;
+
 import java.util.ArrayList;
+
 public class ArrayList1 {
 	private Object[] arr=new Object[3];
     private int p=0;
