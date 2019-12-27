@@ -39,6 +39,7 @@ public class CollectionMethods {
 		//----------------------------	
 		
 		System.out.println("final arraylist is="+a);
+		System.out.println("again arraylist is="+a);
 	}
 
 }
