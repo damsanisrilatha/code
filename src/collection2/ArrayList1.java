@@ -45,13 +45,31 @@ public class ArrayList1 {
 	 }
 	 arr[--p]=null;
  }
+ public Object get(int index)
+ {
+	 if(index>=size())throw new IndexOutOfBoundsException();
+		 return arr[index];
+ }
  public void clear()
  {
 	 arr=new Object[5];
 	 p=0;
  }
+ public String toString()
+ { 
+	 if(size()==0)
+		 return"[]";
+	 String s="[ ";
+	 for(int i=0;i<=size()-1;i++)
+	 {
+		s=s+(int)arr[i]+", "; 
+		
+	 }
+	 s = s+ " ]";
+	 return s;
+ }
 	public static void main(String[] args) {
-		ArrayList a= new ArrayList();
+		ArrayList1 a= new ArrayList1();
 		a.add(20);
 		a.add(14);
 		a.add(25);
@@ -63,7 +81,7 @@ public class ArrayList1 {
 		System.out.println(a);
 		//get element from the list
 	     int n=(Integer)a.get(0);
-         System.out.println(n);
+         System.out.println("get index-0 : "+n);
          //removing element
          a.remove(3);
          System.out.println(a);
